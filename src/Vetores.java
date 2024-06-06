@@ -9,6 +9,10 @@ public class Vetores {
 
         System.out.println("Defina o tamanho do vetor: ");
         tamanho = scanner.nextInt();
+        while(tamanho <= 0) {
+            System.out.println("Por favor, informe um tamanho válido: ");
+            tamanho = scanner.nextInt();
+        }
 
         int[] vet1 = new int[tamanho];
 
